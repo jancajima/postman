@@ -1,0 +1,1289 @@
+{
+	"info": {
+		"_postman_id": "ecc5a01a-a6c9-4ce5-8fe8-80e727de5e2e",
+		"name": "proyecto-final",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "account",
+			"item": [
+				{
+					"name": "list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/bankAccount",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bankAccount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/bankAccount/6380079333f5c5036fe8654f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bankAccount",
+								"6380079333f5c5036fe8654f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "accountByCustomerId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/bankAccount/accountByCustomerId/638ec7fa8aaec7ac9ed59b33",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bankAccount",
+								"accountByCustomerId",
+								"638ec7fa8aaec7ac9ed59b33"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findCustomerById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/bankAccount/findCustomerById/638ec7fa8aaec7ac9ed59b33",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bankAccount",
+								"findCustomerById",
+								"638ec7fa8aaec7ac9ed59b33"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByCustomerIdAndType",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/bankAccount/findByCustomerIdAndType/638ec7fa8aaec7ac9ed59b33/637bd67527a53e3bed26cc5f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bankAccount",
+								"findByCustomerIdAndType",
+								"638ec7fa8aaec7ac9ed59b33",
+								"637bd67527a53e3bed26cc5f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAccountsToCard",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/bankAccount/findAccounts/6381228e296f9b876f839dd8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bankAccount",
+								"findAccounts",
+								"6381228e296f9b876f839dd8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numberAccount\": \"0201145477\",\r\n    \"amount\": 1540.0,\r\n    \"endDate\": \"\",\r\n    \"customerId\": \"63910f226952cf65dd33f45c\",\r\n    \"type\": \"637bd65b27a53e3bed26cc5e\",\r\n    \"commission\": 5,\r\n    \"transactionLimit\": 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/bankAccount",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bankAccount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register validate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numberAccount\": \"0201145477\",\r\n    \"amount\": 1540.0,\r\n    \"endDate\": \"\",\r\n    \"customerId\": \"63910f226952cf65dd33f45c\",\r\n    \"type\": \"637bd65b27a53e3bed26cc5e\",\r\n    \"commission\": 5,\r\n    \"transactionLimit\": 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/bankAccount/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bankAccount",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/bankAccount/638eceb0b0370a41f7a50839",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bankAccount",
+								"638eceb0b0370a41f7a50839"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"id\": \"637bd6b027a53e3bed26cc61\",\r\n        \"numberAccount\": \"36524154CG\",\r\n        \"amount\": 5000.0,\r\n        \"endDate\": \"\",\r\n        \"customerId\": \"6379df2576715c21d560ddb1\",\r\n        \"type\": \"637bd68427a53e3bed26cc60\",\r\n        \"numberOfTransactions\": 0,\r\n        \"commission\": null,\r\n        \"transactionLimit\": null,\r\n        \"debitCardId\": \"638150be250063443d039369\",\r\n        \"associationDate\": null,\r\n        \"creationDate\": \"2022-11-07\",\r\n        \"primaryAccount\": true\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/bankAccount/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bankAccount",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deposit",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"accountId\": \"637bd6b027a53e3bed26cc61\",\r\n   \"amount\": 80\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/bankAccount/deposit",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bankAccount",
+								"deposit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "withDrawl",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"accountId\": \"637bd6b027a53e3bed26cc61\",\r\n   \"amount\": 40\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/bankAccount/withDrawl",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bankAccount",
+								"withDrawl"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "associateCard",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"transactionDate\": \"2022-12-05\",\r\n    \"senderAccountId\": \"638ecb95f051037c7de3e296\",\r\n    \"receptorCreditId\": \"638ed3a67ff98c322c67657f\",\r\n    \"amount\": \"400\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/card/associatePrimaryAccount/63910f58abe0c21fb906ae0e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"card",
+								"associatePrimaryAccount",
+								"63910f58abe0c21fb906ae0e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PrimaryAccount",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"transactionDate\": \"2022-12-05\",\r\n    \"senderAccountId\": \"638ecb95f051037c7de3e296\",\r\n    \"receptorCreditId\": \"638ed3a67ff98c322c67657f\",\r\n    \"amount\": \"400\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/card/associatePrimaryAccount/63910f58abe0c21fb906ae0e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"card",
+								"associatePrimaryAccount",
+								"63910f58abe0c21fb906ae0e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "transPayCredit",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"transactionDate\": \"2022-12-05\",\r\n    \"senderAccountId\": \"638ecb95f051037c7de3e296\",\r\n    \"receptorCreditId\": \"638ed3a67ff98c322c67657f\",\r\n    \"amount\": \"200\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/bankAccount/tpt",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bankAccount",
+								"tpt"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "card",
+			"item": [
+				{
+					"name": "list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/card",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"card"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/card/6381228e296f9b876f839dd8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"card",
+								"6381228e296f9b876f839dd8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cardType\": \"debit\",\r\n    \"cardNumber\": \"54887411210\",\r\n    \"creationDate\": \"2022-12-06\",\r\n    \"expirationDate\": \"2027-11\",\r\n    \"securityCode\": \"321\",\r\n    \"primaryAccountId\": \"\",\r\n    \"clientId\": \"63910f226952cf65dd33f45c\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/card",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"card"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"63815100250063443d03936a\",\r\n    \"cardType\": \"debit\",\r\n    \"cardNumber\": \"879745654577\",\r\n    \"creationDate\": \"2022-10-23\",\r\n    \"expirationDate\": \"2027-11-01\",\r\n    \"securityCode\": \"356\",\r\n    \"primaryAccountId\": \"6380079333f5c5036fe8654f\",\r\n    \"clientId\": \"6380058bc4663158b7bc621f\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/card",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"card"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "associatePrimaryAccount",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"63815100250063443d03936a\",\r\n    \"cardType\": \"debit\",\r\n    \"cardNumber\": \"879745654577\",\r\n    \"creationDate\": \"2022-10-23\",\r\n    \"expirationDate\": \"2027-11-01\",\r\n    \"securityCode\": \"356\",\r\n    \"primaryAccountId\": \"6380079333f5c5036fe8654f\",\r\n    \"clientId\": \"6380058bc4663158b7bc621f\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/card/associatePrimaryAccount/6379da717d9fad2c34fa7243",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"card",
+								"associatePrimaryAccount",
+								"6379da717d9fad2c34fa7243"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "associatePrimaryAccountKafka",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"63815100250063443d03936a\",\r\n    \"cardType\": \"debit\",\r\n    \"cardNumber\": \"879745654577\",\r\n    \"creationDate\": \"2022-10-23\",\r\n    \"expirationDate\": \"2027-11-01\",\r\n    \"securityCode\": \"356\",\r\n    \"primaryAccountId\": \"6380079333f5c5036fe8654f\",\r\n    \"clientId\": \"6380058bc4663158b7bc621f\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/card/associatePrimaryAccount/6379da717d9fad2c34fa7243",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"card",
+								"associatePrimaryAccount",
+								"6379da717d9fad2c34fa7243"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "credit",
+			"item": [
+				{
+					"name": "list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/bankCredit",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bankCredit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/bankCredit/638ed3a67ff98c322c67657f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bankCredit",
+								"638ed3a67ff98c322c67657f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "creditByCustomerId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/bankCredit/creditByCustomerId/6380058bc4663158b7bc621f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bankCredit",
+								"creditByCustomerId",
+								"6380058bc4663158b7bc621f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"numberCredit\": \"3656979755\",\r\n        \"amount\": 2000.0,\r\n        \"credit\": 2000,\r\n        \"startDate\": \"21\",\r\n        \"endDate\": \"20\",\r\n        \"paymentDate\": \"05\",\r\n        \"customerId\": \"638ec7fa8aaec7ac9ed59b33\",\r\n        \"type\": \"1\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/bankCredit/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bankCredit",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "kafkaPublish",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/bankCredit/publish/?message=jennycarol",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bankCredit",
+								"publish",
+								""
+							],
+							"query": [
+								{
+									"key": "message",
+									"value": "jennycarol"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"638ed3a67ff98c322c67657f\",\r\n    \"numberCredit\": \"3656979755\",\r\n    \"amount\": 300.0,\r\n    \"credit\": 2000.0,\r\n    \"startDate\": \"21\",\r\n    \"endDate\": \"20\",\r\n    \"paymentDate\": \"05\",\r\n    \"customerId\": \"638ec7fa8aaec7ac9ed59b33\",\r\n    \"type\": \"1\",\r\n    \"creationDate\": \"2022-12-06\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/bankCredit/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bankCredit",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "payCredit",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"creditId\": \"638ed3a67ff98c322c67657f\",\r\n   \"amount\": 50\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/bankCredit/payCredit",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bankCredit",
+								"payCredit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "payCreditKafka",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"creditId\": \"638ed3a67ff98c322c67657f\",\r\n   \"amount\": 60\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/bankCredit/payCreditKafka",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bankCredit",
+								"payCreditKafka"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "customer",
+			"item": [
+				{
+					"name": "list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/customer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/customer/638ec7e98aaec7ac9ed59b31",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"customer",
+								"638ec7e98aaec7ac9ed59b31"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"ROSA VALVERDE\",\r\n    \"email\": \"rosa@gmail.com\",\r\n    \"phone\": \"965214789\",\r\n    \"document\": \"41253698\",\r\n    \"type\": \"person\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/client",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"client"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"6379df2576715c21d560ddb1\",\r\n    \"name\": \"LILIANA PEREZ SALCEDO\",\r\n    \"email\": \"liliana.perez@gmail.com\",\r\n    \"phone\": \"956327415\",\r\n    \"document\": \"41252365\",\r\n    \"type\": \"business\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/client",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"client"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "debt",
+			"item": [
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/bankDebt",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bankDebt"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "debtByCustomerId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/bankDebt/debtByCustomerId/638ec7e98aaec7ac9ed59b31",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bankDebt",
+								"debtByCustomerId",
+								"638ec7e98aaec7ac9ed59b31"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\": 120.0,\r\n    \"balance\": 120.0,\r\n    \"paymentDate\": \"2022-11-05\",\r\n    \"customerId\": \"638ec7e98aaec7ac9ed59b31\",\r\n    \"creditId\": \"638043bc9c8cfe3387adfb51\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/bankDebt/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bankDebt",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"6380443b296f9b876f839dd0\",\r\n    \"amount\": 1200.0,\r\n    \"balance\": 1100.0,\r\n    \"paymentDate\": \"2022-11-05\",\r\n    \"customerId\": \"638ec7e98aaec7ac9ed59b31\",\r\n    \"creditId\": \"638043bc9c8cfe3387adfb51\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/bankDebt/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bankDebt",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "payDebt",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"debtId\": \"6380443b296f9b876f839dd0\",\r\n    \"amount\": \"100\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/bankDebt/payDebt",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bankDebt",
+								"payDebt"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "report",
+			"item": [
+				{
+					"name": "productByCustomer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/bankProduct/byCustomer/638ec7fa8aaec7ac9ed59b33",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bankProduct",
+								"byCustomer",
+								"638ec7fa8aaec7ac9ed59b33"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "productByDate",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/bankProduct/byDate/account/2022-11-01/2022-11-20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bankProduct",
+								"byDate",
+								"account",
+								"2022-11-01",
+								"2022-11-20"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "transaction",
+			"item": [
+				{
+					"name": "list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"transaction"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "makeAmountAvgReport",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/transaction/customer/638ec7fa8aaec7ac9ed59b33",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"transaction",
+								"customer",
+								"638ec7fa8aaec7ac9ed59b33"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "commissionByAccount",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/transaction/commissionByAccount/637bd6b027a53e3bed26cc61/2022-11-01/2022-11-20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"transaction",
+								"commissionByAccount",
+								"637bd6b027a53e3bed26cc61",
+								"2022-11-01",
+								"2022-11-20"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "transactionByCardTop10",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/transaction/card/6381228e296f9b876f839dd8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"transaction",
+								"card",
+								"6381228e296f9b876f839dd8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"transactionDate\": \"2022-11-17\",\r\n    \"amount\": 2.0,\r\n    \"type\": \"commission\",\r\n    \"idClient\": \"6379df2576715c21d560ddb1\",\r\n    \"idAccount\": \"637bd6b027a53e3bed26cc61\",\r\n    \"accountAmount\": 0.0,\r\n    \"idCard\": \"638150be250063443d039369\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"transaction"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"63805d79c4ea8941be2208c6\",\r\n        \"transactionDate\": \"2022-11-06\",\r\n        \"amount\": 340.0,\r\n        \"type\": \"deposit\",\r\n        \"idClient\": \"637714e6f2f20b0f9489203d\",\r\n        \"idAccount\": \"6379da717d9fad2c34fa7243\",\r\n        \"accountAmount\": 0.0,\r\n        \"idCard\": \"6381228e296f9b876f839dd8\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"transaction"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "kafka",
+			"item": [
+				{
+					"name": "kafka",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/kafka/publish/?message=Jenny",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"kafka",
+								"publish",
+								""
+							],
+							"query": [
+								{
+									"key": "message",
+									"value": "Jenny"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "account type",
+			"item": [
+				{
+					"name": "listar",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8090/accountType",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"accountType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\": \"3\",\r\n    \"name\": \"Cuenta corriente\",\r\n    \"isCommission\": \"false\",\r\n    \"isLimit\": \"true\",\r\n    \"limit\": \"20\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/accountType/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"accountType",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
